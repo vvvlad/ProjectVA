@@ -1,13 +1,13 @@
 
 <mat-sidenav-container class="sidenav-container">
-  <mat-sidenav #drawer class="sidenav" fixedInViewport="true" [mode]="over" [opened]="false" >
+  <mat-sidenav #drawer class="sidenav" fixedInViewport="false" [mode]="over" [opened]="false" >
     <mat-toolbar color="primary">Menu</mat-toolbar><!-- This is the title of the menu  -->
-    <mat-nav-list>
-      <a mat-list-item href="#">Default</a>
-      <a mat-list-item href="dash">Example Dashboard</a>
-      <a mat-list-item href="table">Example Table</a>
+    <mat-nav-list (click)="drawer.toggle()">
+      <a mat-list-item routerLink=""><mat-icon class="icon-menu">home</mat-icon>Default</a>
+      <a mat-list-item routerLink="dash">Example Dashboard</a>
+      <a mat-list-item routerLink="table"><mat-icon class="icon-menu">favorite</mat-icon>Example Table</a>
     </mat-nav-list>
-  </mat-sidenav>j
+  </mat-sidenav>
   <mat-sidenav-content>
     <mat-toolbar color="primary">
       <button mat-icon-button type="button" aria-label="Toggle sidenav" (click)="drawer.toggle()">
@@ -16,11 +16,9 @@
       <span class="proj-title">ProjectVA</span>
       <!-- Filler to take the remaining space of the row -->
       <span class="fill-remaining-space"></span>
-      <mat-icon class="icon-style">favorite</mat-icon>
-      <!-- <mat-icon class="icon-style">delete</mat-icon>
-      <mat-icon class="icon-style">verified_user</mat-icon> -->
+      <mat-icon class="icon-toolbar">favorite</mat-icon>
     </mat-toolbar>
-    <router-outlet></router-outlet>
+    <ng-content></ng-content>
   </mat-sidenav-content>
 </mat-sidenav-container>
 
