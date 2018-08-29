@@ -19,6 +19,7 @@ import { AddProductComponent } from './products/add-product/add-product.componen
 import { ProductDetailsComponent } from './products/product-details/product-details.component';
 import { FlexLayoutModule} from '@angular/flex-layout';
 import { FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { AddProductDialogComponent } from './products/add-product/add-product-dialog.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { FormsModule, ReactiveFormsModule} from '@angular/forms';
     LoginComponent,
     ProductsComponent,
     AddProductComponent,
-    ProductDetailsComponent
+    ProductDetailsComponent,
+    AddProductDialogComponent
   ],
   imports: [
     MaterialModule,
@@ -45,6 +47,7 @@ import { FormsModule, ReactiveFormsModule} from '@angular/forms';
   exports: [
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents:[AddProductDialogComponent]
 })
 export class AppModule { }

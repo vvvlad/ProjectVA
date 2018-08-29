@@ -15,7 +15,11 @@ import {
     MatFormFieldModule,
     MatInputModule,
     MatNativeDateModule,
-    MatDatepickerModule
+    MatDatepickerModule,
+    MatTabsModule,
+    MatSelectModule,
+    MatProgressSpinnerModule,
+    MatDialogModule
   } from '@angular/material';
   import { LayoutModule } from '@angular/cdk/layout';
 
@@ -30,6 +34,7 @@ import {
         MatListModule,
         MatNativeDateModule,
         MatTableModule,
+        MatTabsModule,
         MatPaginatorModule,
         MatSortModule,
         MatGridListModule,
@@ -37,7 +42,10 @@ import {
         MatMenuModule,
         MatFormFieldModule,
         MatInputModule,
-        MatDatepickerModule
+        MatDatepickerModule,
+        MatSelectModule,
+        MatProgressSpinnerModule,
+        MatDialogModule
     ],
     exports: [
         MatButtonModule,
@@ -49,6 +57,7 @@ import {
         MatListModule,
         MatNativeDateModule,
         MatTableModule,
+        MatTabsModule,
         MatPaginatorModule,
         MatSortModule,
         MatGridListModule,
@@ -56,7 +65,10 @@ import {
         MatMenuModule,
         MatFormFieldModule,
         MatInputModule,
-        MatDatepickerModule
+        MatDatepickerModule,
+        MatSelectModule,
+        MatProgressSpinnerModule,
+        MatDialogModule
     ]
 })
 export class MaterialModule {}

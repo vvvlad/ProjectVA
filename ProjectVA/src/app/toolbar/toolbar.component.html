@@ -4,11 +4,11 @@
     <mat-toolbar color="primary">Menu</mat-toolbar><!-- This is the title of the menu  -->
     <mat-nav-list (click)="drawer.toggle()">
       <a mat-list-item routerLink="/"><mat-icon class="icon-menu">home</mat-icon>Default</a>
-      <a mat-list-item routerLink="dash">Example Dashboard</a>
+      <a mat-list-item routerLink="products"><mat-icon class="icon-menu">devices_other</mat-icon>Products</a>
       <a mat-list-item routerLink="table"><mat-icon class="icon-menu">favorite</mat-icon>Example Table</a>
       <mat-list-item>
         <button mat-icon-button>
-            <mat-icon>eject</mat-icon>
+            <mat-icon>power_settings_new</mat-icon>
             Logout
         </button>
       </mat-list-item>
@@ -40,7 +40,7 @@
           </li>
         </ul>
       </div>
-      <mat-icon class="icon-toolbar">favorite</mat-icon>
+      <!-- <mat-icon class="icon-toolbar">favorite</mat-icon> -->
     </mat-toolbar>
     <ng-content></ng-content>
   </mat-sidenav-content>
