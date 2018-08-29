@@ -9,7 +9,7 @@ import { SignupComponent } from './auth/signup/signup.component';
 import { ProductsComponent } from './products/products.component';
 
 const routes: Routes = [
-    { path: '', component: SignupComponent}, // empty part is the root route
+    { path: '', component: WelcomeComponent}, // empty part is the root route
     { path: 'table', component: ExampleTableComponent},
     { path: 'dash', component: ExampleDashboardComponent},
     { path: 'signup', component: SignupComponent},

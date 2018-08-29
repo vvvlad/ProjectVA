@@ -1,4 +1,14 @@
-.welcome-card {
+
+.welcome {
+    text-align: center;
+}
+
+
+
+
+
+
+/* .welcome-card {
     max-width: 500px;
   }
   
@@ -23,4 +33,4 @@ mat-card mat-card-title {
     color: red;
     font-size: xx-large;
     font-weight: bold;
- }
+ } */

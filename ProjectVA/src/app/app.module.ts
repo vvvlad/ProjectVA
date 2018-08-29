@@ -18,6 +18,7 @@ import { ProductsComponent } from './products/products.component';
 import { AddProductComponent } from './products/add-product/add-product.component';
 import { ProductDetailsComponent } from './products/product-details/product-details.component';
 import { FlexLayoutModule} from '@angular/flex-layout';
+import { FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,8 @@ import { FlexLayoutModule} from '@angular/flex-layout';
   imports: [
     MaterialModule,
     BrowserModule,
+    FormsModule,
+    ReactiveFormsModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     FlexLayoutModule
