@@ -23,7 +23,7 @@
       <div class="proj-title"><a routerLink="/">ProjectVA</a></div>
       <!-- Filler to take the remaining space of the row -->
       <span class="fill-remaining-space"></span>
-      <div>
+      <div *ngIf="!isAuth"> 
         <ul fxLayout class="navigation-items">
           <li>
             <a routerLink="/login">
@@ -40,6 +40,16 @@
           </li>
         </ul>
       </div>
+      <div *ngIf="isAuth">
+          <ul fxLayout class="navigation-items">
+            <li>
+              <a routerLink="/logoff">
+                <!-- <mat-icon class="icon-menu">input</mat-icon> -->
+                <span>Logoff</span>
+              </a>
+            </li>
+            </ul>
+        </div>
       <!-- <mat-icon class="icon-toolbar">favorite</mat-icon> -->
     </mat-toolbar>
     <ng-content></ng-content>
