@@ -24,7 +24,9 @@ export class ToolbarComponent implements OnInit, OnDestroy {
       this.isAuth = authStatus;
     });
   }
-
+  onLogout() {
+    this.authService.logout();
+  }
   ngOnDestroy() {
     this.authSubscription.unsubscribe();
   }
