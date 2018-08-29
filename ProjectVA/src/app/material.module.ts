@@ -11,7 +11,9 @@ import {
     MatCardModule,
     MatMenuModule,
     MatButtonModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatFormFieldModule,
+    MatInputModule
   } from '@angular/material';
   import { LayoutModule } from '@angular/cdk/layout';
 
@@ -29,7 +31,9 @@ import {
         MatSortModule,
         MatGridListModule,
         MatCardModule,
-        MatMenuModule
+        MatMenuModule,
+        MatFormFieldModule,
+        MatInputModule
     ],
     exports: [
         MatButtonModule,
@@ -44,7 +48,9 @@ import {
         MatSortModule,
         MatGridListModule,
         MatCardModule,
-        MatMenuModule
+        MatMenuModule,
+        MatFormFieldModule,
+        MatInputModule
     ]
 })
 export class MaterialModule {}
