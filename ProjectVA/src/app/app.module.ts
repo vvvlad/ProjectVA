@@ -30,14 +30,14 @@ import { FlexLayoutModule} from '@angular/flex-layout';
     LoginComponent,
     ProductsComponent,
     AddProductComponent,
-    ProductDetailsComponent,
-    FlexLayoutModule
+    ProductDetailsComponent
   ],
   imports: [
     MaterialModule,
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FlexLayoutModule
   ],
   exports: [
   ],
