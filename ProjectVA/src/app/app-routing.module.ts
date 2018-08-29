@@ -6,7 +6,7 @@ import { ExampleDashboardComponent } from './examples/example-dashboard/example-
 import {WelcomeComponent} from './welcome/welcome.component';
 
 const routes: Routes = [
-    { path: '', component: WelcomeComponent},
+    { path: '', component: WelcomeComponent}, // empty part is the root route
     { path: 'table', component: ExampleTableComponent},
     { path: 'dash', component: ExampleDashboardComponent}
 ];
