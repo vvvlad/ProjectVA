@@ -6,7 +6,7 @@ export interface Product {
     URL: string;
     imageUrl: string;
     BSR: number;
-    category:string;
+    category: string;
     keywords: Keyword[];
     status?: 'stage1' | 'stage2' | 'stage3' | null;
 }

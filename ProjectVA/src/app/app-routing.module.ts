@@ -15,7 +15,8 @@ const routes: Routes = [
     { path: 'dash', component: ExampleDashboardComponent},
     { path: 'signup', component: SignupComponent},
     { path: 'login', component: LoginComponent},
-    { path: 'products', component: ProductsComponent, canActivate: [AuthGuard]},
+    // { path: 'products', component: ProductsComponent, canActivate: [AuthGuard]} return this to enable the guard on products routing
+    { path: 'products', component: ProductsComponent}
 ];
 
 @NgModule({

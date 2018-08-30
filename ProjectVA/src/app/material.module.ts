@@ -45,7 +45,9 @@ import {
         MatDatepickerModule,
         MatSelectModule,
         MatProgressSpinnerModule,
-        MatDialogModule
+        MatDialogModule,
+        MatSortModule,
+        MatPaginatorModule
     ],
     exports: [
         MatButtonModule,
@@ -68,7 +70,9 @@ import {
         MatDatepickerModule,
         MatSelectModule,
         MatProgressSpinnerModule,
-        MatDialogModule
+        MatDialogModule,
+        MatSortModule,
+        MatPaginatorModule
     ]
 })
 export class MaterialModule {}
