@@ -13,5 +13,5 @@ import { MAT_DIALOG_DATA } from '@angular/material';
     </mat-dialog-actions>`
 })
 export class AddProductDialogComponent {
-    constructor(@Inject(MAT_DIALOG_DATA) private passedData: any) {}
+    constructor(@Inject(MAT_DIALOG_DATA) public passedData: any) {}
 }
